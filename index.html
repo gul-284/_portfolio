@@ -6,6 +6,8 @@
     <title>Sara Gul | AI Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -21,6 +23,7 @@
 
     <section id="home" class="hero-section">
         <div class="hero-content">
+            <img src="images/profile.jpg" alt="Sara Gul" class="profile-img">
             <h1>Hi, I'm <span class="highlight">Sara Gul</span></h1>
             <p>Computer Science Student | Aspiring AI Engineer</p>
             <div class="hero-btns">
@@ -32,24 +35,20 @@
 
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>I am a 4th-semester CS student at Fatima Jinnah Women University (FA24B1-CS-001). I have a deep interest in Artificial Intelligence and Low-level systems. I enjoy solving complex problems, from Assembly language interrupts to AI search algorithms.</p>
+        <p>I am a 4th semester CS student with a strong interest in Artificial Intelligence and emerging technologies. I enjoy solving complex algorithmic problems and building efficient systems.</p>
     </section>
 
     <section id="skills" class="content-section">
         <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-tags">
-                    <span>Python</span><span>Java</span><span>C++</span><span>C</span><span>Prolog</span><span>8086 Assembly</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Core Tech</h3>
-                <div class="skill-tags">
-                    <span>Operating Systems</span><span>AI/ML</span><span>Networking</span><span>DLD</span>
-                </div>
-            </div>
+        <div class="skills-grid-icons">
+            <div class="skill-item"><i class="ti ti-brand-python"></i><span>Python</span></div>
+            <div class="skill-item"><i class="ti ti-brand-java"></i><span>Java</span></div>
+            <div class="skill-item"><i class="ti ti-brand-cpp"></i><span>C++</span></div>
+            <div class="skill-item"><i class="ti ti-code"></i><span>C</span></div>
+            <div class="skill-item"><i class="ti ti-settings-automation"></i><span>Assembly</span></div>
+            <div class="skill-item"><i class="ti ti-binary"></i><span>DSA</span></div>
+            <div class="skill-item"><i class="ti ti-brain"></i><span>Prolog</span></div>
+            <div class="skill-item"><i class="ti ti-cpu"></i><span>AI/ML</span></div>
         </div>
     </section>
 
@@ -58,17 +57,18 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Restaurant Management System</h3>
-                <p>A full-stack Java application for inventory and billing.</p>
+                <p>Full-stack Java application for managing restaurant operations with SQL database integration.</p>
                 <a href="https://github.com/gul-284/restaurant-management-system-java-sql" target="_blank" class="project-link">View Repository →</a>
             </div>
             <div class="project-card">
-                <h3>8086 Digital Clock</h3>
-                <p>Multi-country clock using system interrupts for real-time switching.</p>
-                <a href="https://github.com/gul-284/multi-country-digital-clock-8086" target="_blank" class="project-link">View Repository →</a>
+                <h3>Student Information System</h3>
+                <p>A menu-driven C program utilizing structures and file handling to perform CRUD operations on student records.</p>
+                <a href="https://github.com/gul-284/my-first-programming-fundamentals-project" target="_blank" class="project-link">View Repository →</a>
             </div>
             <div class="project-card">
-                <h3>Cyberbullying & Ethics</h3>
-                <p>A detailed research project on digital ethics and social impact.</p>
+                <h3>Network Infrastructure Lab</h3>
+                <p>Configured a LAN environment in VirtualBox with FTP and Web servers, simulating a client-server infrastructure.</p>
+                <span class="tech-tag">Networking | VirtualBox</span>
             </div>
         </div>
     </section>
@@ -76,27 +76,50 @@
     <section id="certifications" class="content-section">
         <h2>Certifications</h2>
         <div class="cert-grid">
+            <!-- Certificate 1 -->
             <div class="cert-card">
-                <p><strong>AR & AI/ML Certification</strong> (Planned)</p>
+                <img src="images/fiverr_cert.jpg" alt="Fiverr Freelancing Certificate" class="cert-ss">
+                <h4>Fiverr Freelancing</h4>
+                <p>Learning With Earning (LWE)</p>
             </div>
+            <!-- Certificate 2 -->
             <div class="cert-card">
-                <p><strong>Automated Systems Design</strong> (Planned)</p>
+                <img src="images/writing_cert.jpg" alt="Content Writing Certificate" class="cert-ss">
+                <h4>Content Writing</h4>
+                <p>Learning With Earning (LWE)</p>
+            </div>
+            <!-- Certificate 3 -->
+            <div class="cert-card">
+                <img src="images/kickstart_cert.jpg" alt="Freelancing Kickstart AICP" class="cert-ss">
+                <h4>Freelancing Kickstart</h4>
+                <p>3-Day Workshop | AICP FJWU</p>
+            </div>
+            <!-- Certificate 4 -->
+            <div class="cert-card">
+                <img src="images/uiux_cert.jpg" alt="Designing with AI Certificate" class="cert-ss">
+                <h4>Designing with AI</h4>
+                <p>UI/UX Faster & Smarter | AICP FJWU</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="content-section contact-bg">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or inquiries!</p>
         <div class="contact-links">
-            <a href="mailto:fa24b1-cs-001@gmail.com" class="contact-item">Email: fa24b1-cs-001@gmail.com</a>
-            <a href="https://www.linkedin.com/in/sara-gul-b347733b4" target="_blank" class="contact-item">LinkedIn Profile</a>
-            <a href="https://github.com/gul-284" target="_blank" class="contact-item">GitHub Repository</a>
+            <a href="mailto:fa24b1-cs-001@gmail.com" class="contact-item">
+                <i class="ti ti-mail"></i> fa24b1-cs-001@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/sara-gul-b347733b4" target="_blank" class="contact-item">
+                <i class="ti ti-brand-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/gul-284" target="_blank" class="contact-item">
+                <i class="ti ti-brand-github"></i> GitHub
+            </a>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Sara Gul | Built with Sky Blue Passion</p>
+        <p>© 2026 Sara Gul | Computer Science Student FA24B1-CS-001</p>
     </footer>
 
     <script src="script.js"></script>
