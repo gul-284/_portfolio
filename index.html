@@ -6,8 +6,8 @@
     <title>Sara Gul | AI Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Icons Library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <!-- Boxicons for Native Colored Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav class="navbar">
@@ -21,9 +21,13 @@
         </ul>
     </nav>
 
-    <section id="home" class="hero-section">
+    <!-- Refined Hero Section: Geometric Overlays, No Photo -->
+    <section id="home" class="hero-section hero-designer">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
         <div class="hero-content">
-            <img src="images/profile.jpg" alt="Sara Gul" class="profile-img">
             <h1>Hi, I'm <span class="highlight">Sara Gul</span></h1>
             <p>Computer Science Student | Aspiring AI Engineer</p>
             <div class="hero-btns">
@@ -38,17 +42,50 @@
         <p>I am a 4th semester CS student with a strong interest in Artificial Intelligence and emerging technologies. I enjoy solving complex algorithmic problems and building efficient systems.</p>
     </section>
 
+    <!-- Prominent 3D Skills Grid -->
     <section id="skills" class="content-section">
         <h2>My Skills</h2>
-        <div class="skills-grid-icons">
-            <div class="skill-item"><i class="ti ti-brand-python"></i><span>Python</span></div>
-            <div class="skill-item"><i class="ti ti-brand-java"></i><span>Java</span></div>
-            <div class="skill-item"><i class="ti ti-brand-cpp"></i><span>C++</span></div>
-            <div class="skill-item"><i class="ti ti-code"></i><span>C</span></div>
-            <div class="skill-item"><i class="ti ti-settings-automation"></i><span>Assembly</span></div>
-            <div class="skill-item"><i class="ti ti-binary"></i><span>DSA</span></div>
-            <div class="skill-item"><i class="ti ti-brain"></i><span>Prolog</span></div>
-            <div class="skill-item"><i class="ti ti-cpu"></i><span>AI/ML</span></div>
+        <div class="skills-grid-3d">
+            <!-- Python: Blue/Green -->
+            <div class="skill-card skill-python">
+                <i class='bx bxl-python'></i>
+                <span>Python</span>
+            </div>
+            <!-- Java: Red -->
+            <div class="skill-card skill-java">
+                <i class='bx bxl-java' ></i>
+                <span>Java</span>
+            </div>
+            <!-- C++: Blue -->
+            <div class="skill-card skill-cpp">
+                <i class='bx bxl-c-plus-plus' ></i>
+                <span>C++</span>
+            </div>
+            <!-- C: Grey/Blue -->
+            <div class="skill-card skill-c">
+                <i class='bx bx-code-alt' ></i>
+                <span>C</span>
+            </div>
+            <!-- Assembly: Grey -->
+            <div class="skill-card skill-assembly">
+                <i class='bx bx-chip' ></i>
+                <span>Assembly</span>
+            </div>
+            <!-- DSA: Deep Blue -->
+            <div class="skill-card skill-dsa">
+                <i class='bx bx-binary' ></i>
+                <span>DSA</span>
+            </div>
+            <!-- Prolog: Brain Icon/Purple -->
+            <div class="skill-card skill-prolog">
+                <i class='bx bx-brain' ></i>
+                <span>Prolog</span>
+            </div>
+            <!-- AI/ML: Bright Blue -->
+            <div class="skill-card skill-ai">
+                <i class='bx bx-bot' ></i>
+                <span>AI/ML</span>
+            </div>
         </div>
     </section>
 
@@ -76,25 +113,21 @@
     <section id="certifications" class="content-section">
         <h2>Certifications</h2>
         <div class="cert-grid">
-            <!-- Certificate 1 -->
             <div class="cert-card">
                 <img src="images/fiverr_cert.jpg" alt="Fiverr Freelancing Certificate" class="cert-ss">
                 <h4>Fiverr Freelancing</h4>
                 <p>Learning With Earning (LWE)</p>
             </div>
-            <!-- Certificate 2 -->
             <div class="cert-card">
                 <img src="images/writing_cert.jpg" alt="Content Writing Certificate" class="cert-ss">
                 <h4>Content Writing</h4>
                 <p>Learning With Earning (LWE)</p>
             </div>
-            <!-- Certificate 3 -->
             <div class="cert-card">
                 <img src="images/kickstart_cert.jpg" alt="Freelancing Kickstart AICP" class="cert-ss">
                 <h4>Freelancing Kickstart</h4>
                 <p>3-Day Workshop | AICP FJWU</p>
             </div>
-            <!-- Certificate 4 -->
             <div class="cert-card">
                 <img src="images/uiux_cert.jpg" alt="Designing with AI Certificate" class="cert-ss">
                 <h4>Designing with AI</h4>
@@ -107,13 +140,13 @@
         <h2>Contact Me</h2>
         <div class="contact-links">
             <a href="mailto:fa24b1-cs-001@gmail.com" class="contact-item">
-                <i class="ti ti-mail"></i> fa24b1-cs-001@gmail.com
+                <i class='bx bx-mail-send' ></i> fa24b1-cs-001@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/sara-gul-b347733b4" target="_blank" class="contact-item">
-                <i class="ti ti-brand-linkedin"></i> LinkedIn
+                <i class='bx bxl-linkedin-square' ></i> LinkedIn
             </a>
             <a href="https://github.com/gul-284" target="_blank" class="contact-item">
-                <i class="ti ti-brand-github"></i> GitHub
+                <i class='bx bxl-github' ></i> GitHub
             </a>
         </div>
     </section>
