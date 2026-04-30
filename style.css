@@ -63,18 +63,53 @@ body {
     border-color: #0ea5e9; 
 }
 
-/* --- Hero Section --- */
+/* --- Refined DESIGNER Hero Section --- */
 .hero-section { 
     height: 100vh; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    background: #e0f2fe; 
+    background: #e0f2fe; /* Light Blue Base */
     text-align: center; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Geometric White Overlays for "Designy" feel */
+.hero-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7); /* Translucent White */
+    border-radius: 50px;
+}
+
+.shape-1 {
+    width: 400px; height: 400px;
+    top: -100px; right: -100px;
+    transform: rotate(45deg);
+}
+
+.shape-2 {
+    width: 250px; height: 250px;
+    bottom: -50px; left: 15%;
+    transform: rotate(-15deg);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10; /* Above the shapes */
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0.5rem;
     color: #1e293b;
 }
@@ -83,17 +118,8 @@ body {
     color: #0369a1; 
 }
 
-.profile-img { 
-    width: 180px; 
-    height: 180px; 
-    border-radius: 50%; 
-    border: 4px solid #0ea5e9; 
-    margin-bottom: 1.5rem; 
-    object-fit: cover;
-}
-
 .hero-btns {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -101,13 +127,14 @@ body {
 
 .btn {
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 12px 28px;
     border-radius: 8px;
     font-weight: 600;
     transition: 0.3s;
     background: #0ea5e9;
     color: white;
     border: 2px solid #0ea5e9;
+    font-size: 1rem;
 }
 
 .btn-outline {
@@ -118,7 +145,7 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
 }
 
 /* --- Content Sections --- */
@@ -144,25 +171,54 @@ body {
     border-radius: 2px;
 }
 
-/* --- Skills Grid --- */
-.skills-grid-icons {
+/* --- Prominent 3D Skills Grid --- */
+.skills-grid-3d {
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2.5rem; 
-    text-align: center; 
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem; 
+    margin-top: 2.5rem; 
 }
 
-.skill-item i { 
-    font-size: 3.5rem; 
-    color: #0ea5e9; 
+.skill-card {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06); /* Depth/3D effect */
+    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(14, 165, 233, 0.15);
+    border-color: #bae6fd;
+}
+
+.skill-card i { 
+    font-size: 4rem; /* Prominent icon size */
     display: block; 
-    margin-bottom: 0.8rem; 
+    margin-bottom: 1rem; 
 }
 
-.skill-item span { 
-    font-weight: 600; 
+.skill-card span { 
+    font-weight: 700; 
     color: #1e293b; 
+    font-size: 1.1rem;
 }
+
+/* Native Icon Coloring */
+.skill-python i   { color: #306998; } /* Python Blue */
+.skill-java i     { color: #f89820; } /* Java Orange/Red */
+.skill-cpp i      { color: #00599c; } /* C++ Dark Blue */
+.skill-c i        { color: #a8b9cc; } /* C Grey */
+.skill-assembly i { color: #555555; } /* Grey */
+.skill-dsa i      { color: #0369a1; } /* Blue */
+.skill-prolog i   { color: #8a2be2; } /* Prolog Purple */
+.skill-ai i       { color: #0ea5e9; } /* Bright Blue */
 
 /* --- Projects Grid --- */
 .projects-grid {
